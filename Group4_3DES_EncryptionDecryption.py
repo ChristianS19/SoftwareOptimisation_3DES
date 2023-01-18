@@ -102,7 +102,7 @@ def encrypt_file():
     # Set nonce
     nonce = des3.nonce
 
-    # Create a file with the encrypted text, [:-4] eliminates .txt from new name.
+    # Create a file with the encrypted text.
     with open(file_path + file_name + '.encrypted', 'wb') as file:
         file.write(ciphertext)
     with open(file_path + file_name + '.nonce', 'wb') as file:
